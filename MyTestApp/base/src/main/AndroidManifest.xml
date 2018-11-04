@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="testapp.com.mytestapp.base">
+
+    <application
+            android:name=".MyApplication"
+            android:icon="@drawable/ic_launcher_background"
+            android:allowBackup="false"
+            android:theme="@style/AppTheme">
+        <meta-data
+            android:name="aia-compat-api-min-version"
+            android:value="1" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
